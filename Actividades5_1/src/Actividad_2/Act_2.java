@@ -9,7 +9,7 @@ public class Act_2 {
         int impt_final,iva,producto;
         while(true){
             try{
-                System.Out.println("Introduzca el importe final: ");
+                System.out.println("Introduzca el importe final: ");
                 impt_final = sc.nextInt();
                 iva = 10*impt_final/100;
                 producto = impt_final-iva;
