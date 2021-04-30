@@ -35,4 +35,7 @@ public class Rectangulo {
      public float area_rect(){
           return(base*altura);
      };
+     public float perimetro_rect(){
+          return(base*2+altura*2);
+     };
 }
