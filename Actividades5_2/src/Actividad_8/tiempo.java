@@ -38,7 +38,7 @@ public class tiempo {
 
     @Override
     public String toString() {
-        return hora+"h"+minuto+"m"+segundo+"s";
+        return hora+"h "+minuto+"m "+segundo+"s";
     }
 
 }
