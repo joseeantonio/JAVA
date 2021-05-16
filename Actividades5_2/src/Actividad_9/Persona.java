@@ -38,8 +38,16 @@ public class Persona {
     }
 
     public boolean persona_morosa(){
+        boolean moroso=false;
         for(int i= 0; i<cuentas.length;i++) {
-            if (cuentas[i].getSaldo_disponible()<0)
+            if (cuentas[i] != null){
+                moroso = cuentas[i].getSaldo_disponible()<0;
+                if(moroso){
+                    break;
+                }else{
+                    break;
+                }
+            }
                 return true;
         }
        return false;
@@ -47,10 +55,10 @@ public class Persona {
 
 
 
-    public void agregarCuenta(){
+    public void agregarCuenta(int numero_de_cuenta,float saldo_){
         for(int i=0; i< cuentas.length; i++){
             if(cuentas[i] == null){
-                cuentas[i]=new Cuenta(7346534,0);
+                cuentas[i]=new Cuenta(numero_de_cuenta,saldo_);
             }
         }
     }
