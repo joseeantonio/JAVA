@@ -40,12 +40,12 @@ public class Cuenta {
     }
 
 
-    public void recibir_abonos(float abono){
+    public void recibir_abonos(int abono){
         saldo_disponible=abono+saldo_disponible;
     }
 
 
-    public void realizar_pagos(float pago){
+    public void realizar_pagos(int pago){
         saldo_disponible=pago-saldo_disponible;
     }
 

@@ -7,9 +7,8 @@ public class Persona {
     private String dni;
     private  Cuenta[] cuentas =new Cuenta[3];
 
-    public Persona(String dni, Cuenta[] cuentas) {
+    public Persona(String dni) {
         this.dni = dni;
-        this.cuentas = cuentas;
     }
 
 
