@@ -37,27 +37,24 @@ public class Persona {
     }
 
     public boolean persona_morosa(){
-        boolean moroso=false;
+        boolean moroso = false;
         for(int i= 0; i<cuentas.length;i++) {
-            if (cuentas[i] != null){
-                moroso = cuentas[i].getSaldo_disponible()<0;
-                if(moroso){
-                    break;
-                }else{
-                    break;
-                }
+            if (cuentas[i] != null) {
+                moroso=cuentas[i].getSaldo_disponible() < 0;
+                if (moroso) break;
+            }else{
+                break;
             }
-                return true;
         }
-       return false;
+        return moroso;
     }
 
 
 
-    public void agregarCuenta(int numero_de_cuenta,float saldo_){
+    public void agregarCuenta(Cuenta cuenta_nueva){
         for(int i=0; i< cuentas.length; i++){
             if(cuentas[i] == null){
-                cuentas[i]=new Cuenta(numero_de_cuenta,saldo_);
+                cuentas[i]= cuenta_nueva;
             }
         }
     }

@@ -46,7 +46,7 @@ public class Cuenta {
 
 
     public void realizar_pagos(int pago){
-        saldo_disponible=pago-saldo_disponible;
+        saldo_disponible=saldo_disponible-pago;
     }
 
 
