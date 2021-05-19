@@ -21,7 +21,7 @@ public class Persona {
     }
 
     public Cuenta[] getCuentas() {
-        return cuentas;
+        return this.cuentas;
     }
 
     public void setCuentas(Cuenta[] cuentas) {
@@ -55,6 +55,7 @@ public class Persona {
         for(int i=0; i< cuentas.length; i++){
             if(cuentas[i] == null){
                 cuentas[i]= cuenta_nueva;
+                break;
             }
         }
     }
