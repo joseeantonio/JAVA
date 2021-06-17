@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ConjuntoLibros {
 
-    private Libro[] libros = new Libro[5];21
+    private Libro[] libros = new Libro[5];
 
     public ConjuntoLibros(Libro[] libros) {
         this.libros = libros;
@@ -57,6 +57,22 @@ public class ConjuntoLibros {
         for (int i = 0; i< libros.length;i++){
             if(libros[i].getTitulo().equals(titulo)){
                 libros[i] = null;
+            }
+        }
+    }
+
+
+    public  Libro calificacionMinMax(){
+        float max = 0;
+        float min = 0;
+        for (int i=0 ; i< libros.length ; i++){
+            if (libros[i].getCalificacion()>max){
+                max = libros[i].getCalificacion();
+            }
+        }
+        for (int i=0 ; i< libros.length ; i++){
+            if (libros[i].getCalificacion()<min){
+                min = libros[i].getCalificacion();
             }
         }
     }
