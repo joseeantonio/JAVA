@@ -44,7 +44,7 @@ class ArmaTest {
 
 
     @AfterEach
-    void setdown(){
+    void setDown(){
 
     }
 
